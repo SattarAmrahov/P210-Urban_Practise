@@ -1,0 +1,298 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.button {
+    border-radius: 5px;
+    text-transform: capitalize;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.button-blue {
+    background-color: #3498DB;
+    color: #ffffff;
+}
+.button-blue:hover {
+    background-color: rgb(78, 168, 228)
+}
+
+.button-white {
+    background-color: #ffffff;
+    color: #3498DB;
+}
+
+.button-big {
+    padding: 20px 35px;
+    font-size: 22px;
+}
+
+.button-small {
+    padding: 15px 25px;
+    font-size: 15px;
+}
+
+.overlay-black {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.66;
+}
+
+header {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 35px;
+    color: #ffffff;
+    z-index: 2;
+}
+
+
+header .header-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.brand {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.brand .brand-name {
+    color: #3498db;
+}
+
+header .menu {
+    position: fixed;
+    right: -300px;
+    width: 300px;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    z-index: 111;
+    /* transform: translateX(100%); */
+    padding: 40px 30px;
+    transition: transform 0.5s;
+}
+header .header-right .menu-button:hover+.menu,
+header .menu:hover {
+    transform: translateX(-100%);
+}
+header .menu .close-menu {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    color: #fff;
+}
+
+header .menu .close-menu:hover {
+    color: #3498db;
+    transition: color 0.3s;
+}
+
+header .menu .menu-items .menu-item {
+    border-bottom: 1px solid #ffffff52;
+}
+
+header .menu .menu-items .menu-item:last-child {
+    border-bottom: none
+}
+
+header .menu .menu-items .menu-item .menu-item-link {
+    padding: 20px 0;
+    display: block;
+    color: #fff;
+    transition: color 0.3s;
+}
+header .menu .menu-items .menu-item .menu-item-link:hover {
+    color: #3498db;
+}
+
+header .menu-button {
+    font-size: 14px;
+    color: #fff;
+}
+
+header .menu-button span {
+    margin-left: 4px;
+}
+
+
+
+#intro-image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    height: 100vh;
+    padding: 100px 0;
+}
+
+#intro-image .intro-content {
+    position: relative;
+    z-index: 1;
+}
+
+.header-big {
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.intro-content {
+    color: #ffffff;
+}
+
+.intro-content .intro-content-text {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
+    margin-bottom: 30px;
+}
+
+.image-circle {
+    border-radius: 50%;
+    border: 6px solid #ffffff;
+    box-shadow: 0px 0px 0px 1px #00000021;
+}
+
+.section-container {
+    padding: 80px 0;
+}
+
+.section-white {
+    background-color: #FAFAFA;
+}
+
+.section-blue {
+    background-color: #3498DB;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+
+#testimonials h4 {
+    font-size: 22px;
+}
+
+.section-white h4 {
+    color: #000;
+}
+
+.section-blue h4 {
+    color: #ffffff;
+}
+
+#testimonials p {
+    font-size: 14px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+#testimonials .section-white p {
+    color: #9CA19F;
+}
+
+#testimonials .section-blue p {
+    color: rgb(159, 217, 255);
+}
+
+.section-blue .image-circle {
+    border: 6px solid rgba(255, 255, 255, 0);
+}
+
+#staff .section-header .section-header-text {
+    color: #bbbbbb;
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+
+.staff-group .staff-item p {
+    color: #bbbbbb;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+
+.image-staff {
+    margin-bottom: 30px;
+}
+
+footer {
+    padding: 100px 0;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.social-media .social-media-item {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 14px;
+    border-radius: 50%;
+    border: 1px solid #c3c3c3d6;
+}
+
+.social-media .social-media-item::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: 1px solid #dadada;
+}
+
+.social-media .social-media-item i {
+    transform: scale(1.4);
+    color: #999999;
+    transition: color 0.3s;
+}
+.social-media .social-media-item:hover i {
+    color: #d4cbcb;
+}
+
+footer .footer-end {
+    color: #bfbfbf;
+    font-size: 13px;
+}
+
+footer .footer-end a {
+    color: #999999;
+    transition: color 0.3s;
+}
+footer .footer-end a:hover {
+    color: #d4cbcb;
+}
